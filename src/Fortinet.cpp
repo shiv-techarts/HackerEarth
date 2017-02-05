@@ -21,13 +21,6 @@ bool compare(string a, string b) {
     if(aL < bL) {
         return true;
     } else if(aL == bL) {
-        /*for(int i = 0; i < aL; i++) {
-            if(a[i] < b[i]) {
-                return true;
-            } else {
-                return false;
-            }
-        }*/
         return strcmp(a.c_str(), b.c_str()) < 0;
     }
     return false;
