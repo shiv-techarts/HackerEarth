@@ -23,8 +23,8 @@ bool compare(string a, string b) {
     } else if(aL == bL) {
         return strcmp(a.c_str(), b.c_str()) < 0;
     }
+    
     return false;
-
 }
 
 int main() {
@@ -33,10 +33,7 @@ int main() {
 
     int size;
     cin >> size;
-    if(size < 1 || size > 100) {
-        return 0;
-    }
-
+   
     for(int i = 0; i < size; i++) {
         string value;
         cin >> value;
